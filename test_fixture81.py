@@ -1,3 +1,5 @@
+#pytest -s -v -m "smoke and win10" test_fixture81.py
+
 import pytest
 from selenium import webdriver
 

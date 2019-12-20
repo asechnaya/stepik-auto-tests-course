@@ -18,7 +18,7 @@ class TestBasket():
     # номер 3
     @pytest.mark.skip(reason="not implemented yet")
     @pytest.mark.smoke
-    def test_guest_can_go_to_payment_page(self, browser):
+    def test_guest_can_go_to_payment_page(self, browser):gi
         assert True
 
     # номер 4

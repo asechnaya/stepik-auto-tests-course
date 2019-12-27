@@ -1,3 +1,7 @@
+# В данном примере “@pytest.fixture” — декоратор, указывающий, что функция ниже является фикстурой,
+# “scope=’…’” указывает на “очерёдность” выполнения, а “autouse=True” говорит о том,
+# что фикстура будет применена для каждого сьюта в тестовом фреймворке
+
 import pytest
 from selenium import webdriver
 
@@ -22,7 +26,7 @@ class TestMainPage1():
     def test_guest_should_see_login_link(self, browser):
         # не передаём как параметр фикстуру prepare_data, но она все равно выполняется
         browser.get(link)
-        browser.find_element_by_css_selector("#login_link")
+        assert browser.find_element_by_css_selector("#login_link").text == "Hello"
 
     def test_guest_should_see_basket_link_on_the_main_page(self, browser):
         browser.get(link)

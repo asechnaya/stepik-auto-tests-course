@@ -5,4 +5,4 @@ driver = webdriver.Firefox()
 
 driver.get("https://stepik.org/lesson/25969/step/8")
 
-#фикстурка, которую вынесли
+# Чтобы проверить правильность установки geckodriver, выполните в интерпретаторе Python команды:

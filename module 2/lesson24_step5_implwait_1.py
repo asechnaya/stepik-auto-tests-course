@@ -6,10 +6,8 @@ def calc(x):
   return str(math.log(abs(12*math.sin(int(x)))))
 
 try:
-    chromedriver = "C:\chromedriver\chromedriver.exe"
-    browser = webdriver.Chrome(executable_path=chromedriver)
     link = "http://suninjuly.github.io/wait1.html"
-    # browser = webdriver.Chrome()
+    browser = webdriver.Chrome()
     browser.implicitly_wait(5)
     browser.get(link)
 

@@ -2,12 +2,13 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import time
+import math
 
 
 def calc(x):
   return str(math.log(abs(12*math.sin(int(x)))))
 
-
+# link = "http://suninjuly.github.io/selects1.html"
 link = "http://suninjuly.github.io/selects2.html"
 
 try:

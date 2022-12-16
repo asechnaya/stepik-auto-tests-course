@@ -32,7 +32,7 @@ for option in options:
     chrome_options.add_argument(option)
 
     
-driver = webdriver.Chrome(options = chrome_options)
+browser = webdriver.Chrome(options = chrome_options)
 
 link = "http://suninjuly.github.io/simple_form_find_task.html"
 browser.get(link)
